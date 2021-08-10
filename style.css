@@ -1,0 +1,963 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+.text-center{
+    text-align: center;
+}
+.ffosw{
+    font-family: Oswald;
+}
+.ffrob{
+    font-family: Roboto;
+}
+.ffcav{
+    font-family: Caveat;
+}
+.display-f-jus-beetween-center-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.red{
+    color: #E02123;
+}
+.white{
+    color: #fff;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+header,main,footer,.w-100{
+    width: 100%;
+}
+.firts-cont-of-header{
+    background: #000;
+}
+.href-first-of-header{
+    font-weight: 100;
+}
+.inform-about-bbq{
+    width: 400px;
+    color: #fff;
+}
+.icon-and-tel>i{
+    font-size: 23px;
+}
+.icon-and-tel{
+    width: 170px;
+}
+.star-and-basket>i{
+    font-size: 23px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.star-and-basket>i:hover{
+    color: #fff;
+}
+.log-in>a{
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.second-chapter-in-first-cont{
+    width: 500px;
+}
+.firts-cont-of-header{
+    padding: 10px 25px;
+    border-bottom: 1px dashed #fff;
+}
+.second-cont-of-header{
+    background: #212121;
+}
+.img-in-li-header{
+    width: 35px;
+}
+.ul-div-in-header{
+    width: 60%;
+}
+.ul-in-header>li{
+    padding: 25px;
+    cursor: pointer;
+}
+.ul-in-header>li:hover{
+    color: #000;
+    background: #fff;
+}
+.content-of-second-header{
+    padding: 0 30px;
+}
+.div-for-grill{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 120;
+    display: none;
+    z-index: 9999;
+}
+.grill-li:hover>.div-for-grill,.more-things-li:hover>.div-for-grill,
+.knives-and-ect:hover>.div-knives-and-ect,.special-meat:hover>.div-special-meat{
+    display: block;
+    background: #fff;
+}
+.content-knives-and-ect-li{
+    align-items: flex-start;
+    width: 30%;
+    margin: 0 auto;
+}
+.content-of-grill-div,.content-of-more-things-li{
+    width: 85%;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+.title-of-catalog{
+    color: #c1c1c1;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.hoters{
+    width: 152px;
+}
+.content-special-meat-li>ul>li>img{
+    width: 150px;
+}
+.content-special-meat-li{
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+}
+.view-all-grils-btn{
+    font-family: Oswald;
+    background: #E02123;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 20px 20px;
+    border: none;
+    box-sizing: border-box;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.1s all ease;
+    cursor: pointer;
+    outline: none;
+}
+.view-all-grils-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.content-of-photo{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 120px;
+    position: relative;
+    z-index: 2;
+}
+.title-of-photo{
+    color: #fff;
+    font-family: Caveat;
+    font-weight: 100;
+    font-size: 42px;
+    line-height: 1.5;
+    text-align: center;
+}
+.big-title{
+    font-size: 65px;
+    max-width: 1060px;
+    letter-spacing: 0.1em;
+    margin: 0 auto;
+    padding: 30px 0;
+    font-weight: 800;
+    font-family: Oswald;
+    text-align: center;
+    color: #fff;
+}
+.inform{
+    max-width: 700px;
+    font-family: Oswald;
+    text-align: center;
+    line-height: 27px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.href-in-slider>a{
+    color: #fff;
+    text-transform: uppercase;
+    background: #E02123;
+    padding: 20px 15px;
+    border-radius: 6px;
+    letter-spacing: 0.5em;
+    font-family: Oswald;
+}
+.href-in-slider{
+    margin: 56px auto 0px auto;
+    padding-bottom: 78px;
+    width: 243px;
+}
+.filter-for-slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.slider-div{
+    position: relative;
+}
+.slider-span{
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.slider-span:hover{
+    background: #E02123;
+}
+.slider-divs-white{
+    position: absolute;
+    z-index: 2;
+    bottom: 6;
+}
+.slider-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first-photo{
+    width: 100%;
+    background: url('https://www.bbqstore.ru/upload/iblock/f56/Luchshie-grili-mira.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.second-photo{
+    width: 100%;
+    background: url('https://www.bbqstore.ru/upload/iblock/22e/V-kredit-bez-protsentov.jpg') no-repeat;
+    background-size: cover;
+    display: none;
+}
+.third-photo{
+    width: 100%;
+    background: url('https://www.bbqstore.ru/upload/iblock/e24/Keramicheskie-grili-Kamado.jpg') no-repeat;
+    background-size: cover;
+    display: none;
+}
+.forth-photo{
+    width: 100%;
+    background: url('https://www.bbqstore.ru/upload/iblock/77c/Originalnye-brendy.jpg') no-repeat;
+    background-size: cover;
+    display: none;
+}
+.fifth-photo{
+    width: 100%;
+    background: url('https://www.bbqstore.ru/upload/iblock/5e5/Legendarnye-brendy.jpg') no-repeat;
+    background-size: cover;
+    display: none;
+}
+.sixth-photo{
+    width: 100%;
+    background: url('https://www.bbqstore.ru/upload/iblock/683/Semeynye-traditsii.jpg') no-repeat;
+    background-size: cover;
+    display: none;
+}
+.seventh-photo{
+    width: 100%;
+    background: url('https://www.bbqstore.ru/upload/iblock/fe9/Gastronomicheskie-izyski.jpg') no-repeat;
+    background-size: cover;
+    display: none;
+}
+.eight-photo{
+    width: 100%;
+    background: url('https://www.bbqstore.ru/upload/iblock/fbd/Iskusstvo-gotovit.jpg') no-repeat;
+    background-size: cover;
+    display: none;
+}
+.ninth-photo{
+    width: 100%;
+    background: url('https://www.bbqstore.ru/upload/iblock/106/Vse-dlya-griley-i-barbekyu.jpg') no-repeat;
+    background-size: cover;
+    display: none;
+}
+.content-of-inform-about-under-slider{
+    width: 80%;
+    margin: 60px auto;
+}
+.for-size-of-img-in-under-slider{
+    width: 255px;
+    height: 321px;
+    position: relative;
+    border-radius: 6px;
+}
+.first-img-in-under-slider{
+    width: 100%;
+    height: 100%;
+    background: url('https://www.bbqstore.ru/upload/iblock/fe1/Gril-Akademiya-na-YOUTUBE.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+}
+.second-img-in-under-slider{
+    width: 100%;
+    height: 100%;
+    background: url('https://www.bbqstore.ru/upload/iblock/972/Video-konsultatsiya.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+}
+.third-img-in-under-slider{
+    width: 100%;
+    height: 100%;
+    background: url('https://www.bbqstore.ru/upload/iblock/e47/discount1.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+}
+.forth-img-in-under-slider{
+    width: 100%;
+    height: 100%;
+    background: url('https://www.bbqstore.ru/upload/iblock/75c/Letnie-kukhni-Barbekyu.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+}
+.filter-in-under-slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    border-radius: 6px;
+}
+.p-in-img-under-slider{
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+    font-size: 28px;
+    padding: 10px;
+}
+.first-title-of-grill-type,.second-title-of-grill-type{
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.choose-your-grill{
+    width: 80%;
+    margin: 0 auto 30px auto;
+}
+.grill-choice-photo,.grill-choice-div{
+    border-radius: 100px;
+}
+.grill-choice-div{
+    border: 1px solid;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.grill-choice-div::before{
+    position: absolute;
+    content: '';
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px dotted #000;
+}
+.grill-choice-div:hover::before{
+    border: 2px dotted #E02123;
+    animation: rotate 0.5s infinite;
+}
+@keyframes rotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.p-in-choice-grill{
+    color: #000;
+    margin-top: 20px;
+
+}
+.second-choice-grill{
+    width: 40%;
+    margin: 30px auto;
+}
+.second-grill-first{
+    width: 150px;
+}
+.block-of-price{
+    position: relative;
+    border: 1px solid #c1c1c1;
+    padding: 20px 50px 15px 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    border-radius: 6px;
+}
+.content-of-price-of-grill{
+    width: 80%;
+    margin: 30px auto;
+}
+.img-prices{
+    margin: 20px 0 0 30px;
+}
+.star-div{
+    font-size: 25px;
+    color: #c3c3c3;
+    position: absolute;
+    right: 10;
+    top: 20;
+}
+.star-div>i{
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.star-div>i:hover{
+    color: #E02123;
+}
+.the-name-of-grill-in-price{
+    width: 250px;
+    font-weight: 300;
+    font-size: 18px;
+}
+.price-of-grill{
+    margin-top: 10px;
+}
+.p-bottom-of-price{
+    border: 2px solid #E02123;
+    border-radius: 50px;
+    font-size: 12px;
+    padding: 5px;
+    width: 230px;
+    margin-top: 5px;
+}
+.basket-div-in-price{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #E02123;
+    border-radius: 0 0 6px;
+}
+.basket-div-in-price:hover{
+    background: #E02123;
+    color: #fff;
+}
+.fast-view-in-price{
+    position: absolute;
+    color: #fff;
+    background: rgba(0,0,0,.7);
+    border-radius: 15px;
+    padding: 7px 40px;
+    font-size: 18px;
+    top: 140px;
+    left: 50px;
+    display: none;
+}
+.block-of-price:hover>.fast-view-in-price{
+    display: block;
+}
+.block-of-price:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 5px 2px #888888;
+}
+.enter-in-catalog-grill>a{
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    background: #E02123;
+    border-radius: 6px;
+    display: inline-block;
+}
+.enter-in-catalog-grill>a:hover{
+    background: rgb(95, 1, 1);
+}
+.enter-in-catalog-grill{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.content-of-helpful-inform{
+    width: 80%;
+    margin: 30px auto;
+}
+.first-div-of-helpful{
+    position: relative;
+    width: 65%;
+    background: url('https://www.bbqstore.ru/local/templates/bbq/images/%D0%BA%D0%BE%D0%BF%D1%87%D0%B5%D0%BD%D0%B8%D0%B5Weber.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 380px;
+    border-radius: 6px;
+    z-index: 1;
+}
+.second-div-of-helpful{
+    position: relative;
+    width: 30%;
+    background: url('https://www.bbqstore.ru/local/templates/bbq/images/%D0%BA%D1%83%D1%85%D0%BD%D1%8F.jpeg') no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 380px;
+    border-radius: 6px;
+    z-index: 1;
+}
+.for-filter-help{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 2;
+    border-radius: 6px;
+}
+.inform-in-help{
+    position: absolute;
+    z-index: 3;
+    font-size: 30px;
+    bottom: 20;
+    left: 20;
+}
+.inform-in-help-second{
+    top: 20;
+}
+.title-of-inform-help{
+    font-size: 45px;
+}
+.arrow-left-in-help{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    padding: 20px;
+    border-radius: 0 0 6px;
+    font-size: 30px;
+    color: #c3c3c3;
+    cursor: pointer;
+}
+.arrow-left-in-help:hover{
+    color: #fff;
+    background: #E02123;
+}
+.content-of-weber{
+    width: 80%;
+    margin: 30px auto;
+}
+.big-img-div-weber{
+    width: 65%;
+}
+.weber-img-div{
+    position: relative;
+}
+.new-img{
+    background: url('https://www.bbqstore.ru/local/templates/bbq/images/star.png') no-repeat;
+    background-size: cover;
+    width: 187px;
+    height: 186px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: 'Weber Serif';
+    transform: rotate(-15deg);
+    position: absolute;
+    left: -10px;
+    top: 140;
+    margin-top: 50px;
+    font-weight: bold;
+    font-family: Oswald;
+}
+.second-title-weber{
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+}
+.inform-div{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.first-title-weber{
+    font-size: 40px;
+}
+.p-in-weber{
+    margin-top: 20px;
+}
+.price-of-weber{
+    font-weight: bold;
+    font-size: 35px;
+    color: #000;
+    margin: 20px 0;
+}
+.href-div-in-weber>a{
+    font-size: 25px;
+    padding: 10px 55px 10px 10px;
+    background: #E02123;
+    text-transform: uppercase;
+    border-radius: 6px;
+    white-space: nowrap;
+    position: relative;
+}
+.href-div-in-weber>a>i{
+    position: absolute;
+    right: 0;
+    background: #000;
+    padding: 12.5px;
+    bottom: 0;
+    border-radius: 0 6px 6px 0;
+}
+.before-footer{
+    padding-bottom: 30px;
+}
+.content-of-before-footer{
+    width: 80%;
+    margin: 40px auto;
+    align-items: flex-start;
+}
+.first-div-of-before-footer{
+    width: 65%;
+    height: 390px;
+    background: url('https://www.bbqstore.ru/local/templates/bbq/images/epicurean.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+    border-radius: 6px;
+}
+.second-first-img-div{
+    width: 100%;
+    height: 150px;
+    background: url('https://www.bbqstore.ru/local/templates/bbq/images/pulledpork.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+    border-radius: 6px;
+}
+.second-second-img-div{
+    width: 100%;
+    height: 150px;
+    background: url('https://www.bbqstore.ru/local/templates/bbq/images/pizza.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+    border-radius: 6px;
+}
+.second-div-in-before-footer{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 380px;
+}
+.href-div-before-footer>a{
+    padding: 10px 76px;
+    font-size: 25px;
+    background: #E02123;
+    text-transform: uppercase;
+    border-radius: 6px;
+    white-space: nowrap;
+    position: relative;
+}
+.content-of-footer{
+    width: 80%;
+    margin: 0 auto;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+footer{
+    background: #212121;
+}
+.title-of-ul-footer{
+    color: #fff;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+}
+.li-in-footer{
+    color: #c3c3c3;
+    font-family: Roboto;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.scroll-btn{
+    padding: 10px;
+    border: 2px solid #fff;
+    margin-top: 30px;
+    display: inline-block;
+}
+.the-end-of-footer{
+    width: 85%;
+    margin: 0px auto;
+    padding: 10px 0;
+}
+.bar{
+    font-size: 30px;
+    color: #E02123;
+    display: none;
+}
+.display-block{
+    display: block !important;
+}
+@media (max-width: 1290px) and (min-width: 1024px){
+    .ul-div-in-header{
+        width: 80%;
+    }
+    .content-of-grill-div,.content-special-meat-li,.choose-your-grill,.content-of-price-of-grill
+    ,.content-of-helpful-inform,.content-of-weber{
+        width: 97%;
+    }
+    .content-knives-and-ect-li{
+        width: 50%;
+    }
+    .content-of-inform-about-under-slider{
+        width: 100%;
+    }
+    .inform-div{
+        width: 30%;
+    }
+    .href-div-before-footer>a{
+        padding: 10px 35px;
+    }
+    .second-choice-grill{
+        width: 80%;
+    }
+}
+@media (max-width: 1023px) and (min-width: 767px){
+    .content-of-inform-about-under-slider,.inform-div{
+        width: 70%;
+    }
+    .for-size-of-img-in-under-slider{
+        margin-bottom: 40px;
+    }
+    .choose-your-grill>div{
+        margin-bottom: 40px;
+    }
+    .grill-choice-photo{
+        width: 100px;
+    }
+    .choose-your-grill{
+        width: 90%;
+    }
+    .grill-choice-div::before {
+        width: 107px;
+        height: 107px;
+    }
+    .content-of-price-of-grill{
+        flex-direction: column;
+    }
+    .block-of-price{
+        margin-bottom: 40px;
+    }
+    .content-of-helpful-inform{
+        width: 95%;
+    }
+    .second-div-of-helpful{
+        width: 38%;
+    }
+    .first-div-of-helpful{
+        width: 60%;
+    }
+    .big-img-div-weber {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .weber-img-div>img,.first-div-of-before-footer{
+        width: 100%;
+    }
+    .inform-div{
+        text-align: center;
+    }
+    .second-first-img-div,.second-second-img-div,.second-div-in-before-footer{
+        display: none;
+    }
+    .href-div-before-footer>a{
+        display: block;
+    }
+    .content-of-weber{
+        flex-direction: column;
+    }
+    .content-of-footer{
+        display: grid;
+        grid-template-columns: 108px 209px 225px;
+    }
+    .content-of-footer>ul{
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 766px) and (min-width: 320px){
+    .inform-div{
+        width: 70%;
+    }
+    .for-size-of-img-in-under-slider{
+        margin-bottom: 40px;
+    }
+    .choose-your-grill>div{
+        margin-bottom: 40px;
+    }
+    .grill-choice-photo{
+        width: 200px;
+    }
+    .choose-your-grill{
+        width: 90%;
+        flex-direction: column;
+    }
+    .grill-choice-div::before {
+        width: 207px;
+        height: 207px;
+    }
+    .content-of-price-of-grill{
+        flex-direction: column;
+    }
+    .content-of-helpful-inform{
+        width: 95%;
+    }
+    .big-img-div-weber {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .weber-img-div>img,.first-div-of-before-footer{
+        width: 100%;
+    }
+    .inform-div{
+        text-align: center;
+    }
+    .second-first-img-div,.second-second-img-div,.second-div-in-before-footer{
+        display: none;
+    }
+    .href-div-before-footer>a{
+        display: block;
+    }
+    .content-of-weber,.content-of-helpful-inform,.content-of-inform-about-under-slider{
+        flex-direction: column;
+    }
+    .content-of-footer{
+        display: grid;
+        grid-template-columns: 145px 140px;
+    }
+    .content-of-footer>ul{
+        margin-bottom: 40px;
+    }
+    .href-div-in-weber>a {
+        font-size: 15px;
+    }
+    .href-div-in-weber>a>i{
+        padding: 11.5px;
+    }
+    .new-img{
+        width: 90px;
+        height: 90px;
+        top: 20;
+        font-size: 13px;
+    }
+    .first-div-of-helpful,.second-div-of-helpful,.content-of-price-of-grill{
+        width: 100%;
+    }
+    .second-div-of-helpful{
+        margin-top: 30px;
+    }
+    .block-of-price {
+        margin-bottom: 40px;
+        padding: 20px 20px 15px 10px;
+    }
+    .big-title{
+        font-size: 28px;
+    }
+    .title-of-photo{
+        font-size: 25px;
+    }
+    .content-of-inform-about-under-slider{
+        width: 100%;
+    }
+    .for-size-of-img-in-under-slider{
+        width: 308px;
+        height: 360px;
+    }
+}
+@media (max-width: 1023px) and (min-width: 320px){
+    .firts-cont-of-header,.img-in-li-header{
+        display: none;
+    }
+    .div-knives-and-ect,.content-special-meat-li,.content-of-more-things-li{
+        padding-left: 11px;
+    }
+    /* .ul-in-header{
+        align-items: flex-start;
+    } */
+    .ul-in-header>li{
+        padding: 5px;
+        color: #E02123;
+    }
+    .ul-in-header{
+        width: 160px;
+        height: 100vh;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        left: 0;
+        top: 57;
+        color: #E02123;
+        background: #000;
+        justify-content: flex-start;
+    }
+    .content-of-second-header{
+        padding: 10px 30px;
+    }
+    .content-of-grill-div>ul>li>img,.content-of-more-things-li>ul>li>img,
+    .content-knives-and-ect-li>ul>li>img,.content-special-meat-li>ul>li>img{
+        display: none;
+    }
+    .content-of-grill-div{
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    .div-for-grill,.content-of-more-things-li,.content-of-more-things-li
+    ,.content-knives-and-ect-li,.content-special-meat-li{
+        top: 34;
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        padding-bottom: 100px;
+    }
+    .view-all-grils-btn{
+        font-size: 13px;
+        padding: 11px;
+    }
+    .div-for-catalog{
+        top: 68;
+    }
+    .div-knives-and-ect{
+        top: 102;
+    }
+    .div-special-meat{
+        top: 136;
+    }
+    .fa-search{
+        position: absolute;
+        bottom: 18;
+        right: 20;
+    }
+    .second-cont-of-header{
+        display: flex;
+        justify-content: center;
+    }
+    .bar{
+        display: block;
+        position: absolute;
+        left: 22;
+    }
+    .ul-in-header{
+        display: none;
+    }
+}
